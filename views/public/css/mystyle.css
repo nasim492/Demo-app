@@ -1,0 +1,30 @@
+.item{
+    background-color: aliceblue;
+    color:rgb(18, 17, 17);
+    padding: 25px;
+    text-align: center;
+    margin: 3px;
+    border: 1px solid black;
+    /* width: 350px; */
+    font-weight: bold;
+}
+.item:hover{
+    box-shadow: 2px 2px 8px black;
+}
+.form-control{
+    border: 1px solid black;
+   
+}
+.form-label{
+    font-weight: bold;
+}
+.p{
+    text-align: justify;
+}
+.card{
+    margin: 15px;
+    border: 2px solid black;
+}
+.card-img-top{
+    height: 85vh;
+}

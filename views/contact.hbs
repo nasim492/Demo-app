@@ -1,0 +1,52 @@
+{{>head}}
+<title>My Site |Contact</title>
+</head>
+{{>navbar}}
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-12">
+           <div class="item">
+           alamnasim492@gmail.com
+           </div>
+           <div class="item">
+           7654182972
+           </div>
+           <div class="item">
+          Abul Fazal Enclave Part-1</br>Jamia Nagar Okhla-110025
+           </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+            {{#if message}}
+            <div class="alert alert-success" role="alert">
+            your Querry has been sumbitted
+           </div>
+           {{/if}}
+        <form action="/contact" method="post">
+        <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input required type="name" class="form-control" name="name"placeholder="Enter Your Name">
+        </div>
+         <div class="mb-3">
+        <label for="email" class="form-label"> Email Id</label>
+        <input required type="email" class="form-control" name="email"placeholder="Enter Your Email id">
+        </div>
+         <div class="mb-3">
+        <label for="number" class="form-label">Phone</label>
+        <input required type="number" class="form-control" name="number"placeholder="Enter Your Mobile Number">
+        </div>
+         <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input required type="subject" class="form-control" name="subject"placeholder="Enter Your Subject">
+        </div>
+           <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <input required type="text" class="form-control"style="padding:35px" name="message" placeholder="Enter Your Message.....">
+        </div>
+       
+       
+       <button type="submit" class="btn btn-success w-100">Submit</button>
+       </form>
+        </div>
+    </div>
+</div>
+{{>footer}}
